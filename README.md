@@ -5,5 +5,6 @@ We employed several hard-coded paths in these scripts that should be adapted to 
 
 A typical workflow will look something like this:
 
-1. Run `run_salmon_se.sh` or `run_salmon.sh` for single end and paired end respectively
-2. 
+1. Run `run_salmon_se.sh` or `run_salmon.sh` for single end and paired end respectively. Make sure you have the correct index libraries
+2. Run `star_align_se.sh` or `star_align.sh` make sure you have the correct index libraries.
+3. Run casper script
