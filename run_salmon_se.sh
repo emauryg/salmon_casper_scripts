@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ### Run salmon for single end RNA-seq data
+## Written by Eduardo Maury (eduardo_maury@hms.harvard.edu)
 
 fastq_dir=$1
 outdir=$2
@@ -19,7 +20,7 @@ do
 	 -p 4 \
 	 -o ${outdir}/${fastq_pfx}_quant \
 	 --seqBias \
-	 --gcBias \
+	 --gcBias \	
 	 --useVBOpt \
 	 --numBootstraps 30 \
 	 --validateMappings"
