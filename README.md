@@ -7,4 +7,7 @@ A typical workflow will look something like this:
 
 1. Run `run_salmon_se.sh` or `run_salmon.sh` for single end and paired end respectively. Make sure you have the correct index libraries
 2. Run `star_align_se.sh` or `star_align.sh` make sure you have the correct index libraries.
-3. Run casper script
+3. Run `bafextract.sh`
+4. Run `casper_running_script.R`, make sure to change the paths to where your salmon and bafextract outputs are located. 
+
+**Note:** controls samples were generated with a combination of samples to be used across tumors. You might need to build your own control reference TPM values and bafextract outputs following a protocol similar to how we did it for tumors.
